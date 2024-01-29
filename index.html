@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        width:300px;
+        border-radius: 20px;
+        background: #dddddd;
+        text-align: center;
+        align-items: center;
+        padding:20px;
+        margin:auto;
+        margin-top:200px;
+    }
+    select{
+        appearance: none;
+        /*  safari  */
+        -webkit-appearance: none;
+        /*  other styles for aesthetics */
+        width: 100%;
+        font-size: 1.15rem;
+        padding: 0.675em 6em 0.675em 1em;
+        background-color: #fff;
+        border: 1px solid #caced1;
+        border-radius: 0.25rem;
+        color: #000;
+        cursor: pointer;
+    }
+    p{
+        font-size:22px;
+    }
+    div p:nth-child(even){
+        background-color: tomato;
+        color:#fff;
+        padding:10px;
+    }
+    div p:nth-child(odd){
+        background-color: rgb(116, 255, 225);
+        color:#000000;
+        padding:10px;
+    }
+    button{
+        padding:10px 20px;
+        border:none;
+        border-radius: 10px;
+        background-color: black;
+        color:#fff;
+        cursor: pointer;
+        font-size: 20px;
+    }
+</style>
+<body>
+    <div>
+        <h2>First Select Country</h2>
+        <p style="background: #f8eaea;color:black">If you face any bug, Please Reload</p>
+        <select id="countryName" value="Country">
+            <option value="">Country</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="India">India</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Nepal">Nepal</option>
+        </select>
+        <p><span id="country">Please Select One</span><span class="findElement"></span></p>
+
+
+
+        <select id="gender" required>
+            <option value="">Type Of Passenger</option>
+            <option value="Children">Children</option>
+            <option value="Student">Student</option>
+            <option value="Senior Citizen">Senior Citizen</option>
+            <option value="Regular">Regular</option>
+        </select>
+        <p id="gender1">Please Select One</p>
+
+
+
+        <p id="discount">My Discount = <span></span></p>
+        <p id="price" style="background-color: black; color:#fff">My ticket price = <span></span></p>
+
+        <button type="button" onclick="myReload()">Reload</button>
+    </div>
+    <script src="task.js"></script>
+</body>
+</html>
